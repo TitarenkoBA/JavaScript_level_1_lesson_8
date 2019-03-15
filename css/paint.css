@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	text-align: center;
+	background: linear-gradient(to right, gray, lightgray, gray);
+}
+
+.container {
+	margin: 1% auto;
+	width: 1000px;
+	min-height: 900px;
+	background: linear-gradient(to right, gray, lightgray, gray);
+	border: 10px solid gray;
+	border-bottom: none;
+	border-radius: 5px;
+	box-shadow: 0 0 10px;
+}
+
+#canv {
+	width: 1000px;
+	height: 800px;
+	background: white;
+	border-radius: 5px;
+}
+
+.tools {
+	margin: 25px auto auto;
+}
+
+.coordinates p {
+	display: inline-block;
+}
+
+.pure-button {
+	padding: 10px 30px;
+}
+
+#red {
+	background: red;
+	color: red;
+}
+#black {
+	background: black;
+	color: black;
+}
+#yellow {
+	background: yellow;
+	color: yellow;
+}
+#blue {
+	background: blue;
+	color: blue;
+}
+#gray {
+	background: gray;
+	color: gray;
+}
+#pink {
+	background: pink;
+	color: pink;
+}
+#brown {
+	background: brown;
+	color: brown;
+}
+
+#color {
+	position: relative;
+	bottom: 5px;
+	padding: 9.5px;
+	border: none;
+}
+
+#sizeSelect {
+	margin: 9.5px 0 0;
+}

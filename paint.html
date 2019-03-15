@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Paint</title>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/paint.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="canv">
+		<canvas id="canv" width="1000" height="800"></canvas>
+	</div>
+	<div class="tools pure-g">
+			<div class="time pure-u-1-5">
+				<p id="my_time"></p>
+			</div>
+			<div class="coordinates pure-u-1-5">
+				<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+				<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			</div>
+			<div class="pure-button-group pure-u-3-5" role="group">
+				<button class="toolButton pure-button button-xlarge" id='brush'><i class="fa fa-paint-brush toolButton" id='brush' aria-hidden="true"></i></button>
+				<button class="toolButton pure-button button-xlarge" id='eraser'><i class="fa fa-eraser toolButton" id='eraser' aria-hidden="true"></i></button>
+				<button class="toolButton pure-button button-xlarge" id='spray'><i class="fas fa-spray-can toolButton" id='spray' aria-hidden="true"></i></button>
+				<button class="toolButton pure-button button-xlarge" id='pencel'><i class="fas fa-pencil-alt toolButton" id='pencel' aria-hidden="true"></i></button>
+				<input type="range" min="5" max="50" id="sizeSelect" value="5">
+				<select id="color">
+					<option id="red" value="red">red</option>
+					<option id="black" value="black">black</option>
+					<option id="yellow" value="yellow">yellow</option>
+					<option id="blue" selected value="blue">blue</option>
+					<option id="gray" value="gray">gray</option>
+					<option id="pink" value="pink">pink</option>
+					<option id="brown" value="brown">brown</option>
+				</select>
+			</div>
+	</div>
+</div>
+<script src="js/paint.js"></script>
+</body>
+</html>
