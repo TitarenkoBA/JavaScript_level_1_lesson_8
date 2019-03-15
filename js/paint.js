@@ -135,7 +135,6 @@ var drawPencel = function (evt) {
 };
 
 // Время
-
 var time = function () {
 	
 	var date = new Date ();
